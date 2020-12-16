@@ -21,8 +21,6 @@ class Doctor
   end
 
   def patients
-    appointments.map do |appointment|
-      appointment.patient
-    end.uniq.flatten
+    appointments.map(&:doctor)
   end
 end
