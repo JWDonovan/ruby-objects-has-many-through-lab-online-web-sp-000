@@ -1,10 +1,7 @@
 class Appointment
-  attr_accessor :name
-
   @@all = []
 
-  def initalize(name)
-    @name = name
+  def initalize
     @@all << self
   end
 
