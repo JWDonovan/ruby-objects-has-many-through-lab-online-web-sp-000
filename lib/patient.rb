@@ -21,4 +21,8 @@ class Patient
       appointment.patient === self
     end
   end
+
+  def doctors
+    Appointment.map(?:doctor)
+  end
 end
