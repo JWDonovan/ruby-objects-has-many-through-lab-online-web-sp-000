@@ -14,8 +14,4 @@ class Song
   def self.all
     @@all
   end
-
-  def say_hi
-    puts 'hi'
-  end
 end
