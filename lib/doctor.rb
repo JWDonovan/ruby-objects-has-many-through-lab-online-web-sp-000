@@ -21,8 +21,8 @@ class Doctor
   end
 
   def patients
-    appointments.select do |appointment|
+    appointments.map do |appointment|
       appointment.patient
-    end.uniq
+    end
   end
 end
