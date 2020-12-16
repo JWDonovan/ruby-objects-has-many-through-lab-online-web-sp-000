@@ -3,11 +3,7 @@ class Patient
 
   def initialize(name)
     @name = name
-    save
-  end
-
-  def save
-    @@all << self
+    @@all << save
   end
 
   def self.all
