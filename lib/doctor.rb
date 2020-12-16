@@ -23,6 +23,6 @@ class Doctor
   def patients
     appointments.map do |appointment|
       appointment.patient
-    end.flatten
+    end.uniq.flatten
   end
 end
