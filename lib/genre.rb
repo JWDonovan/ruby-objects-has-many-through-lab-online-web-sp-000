@@ -19,10 +19,7 @@ class Genre
   end
 
   def artists
-    #@songs.map(&:artist)
-    @songs.collect do |song|
-      song.artist
-    end
+    @songs.map(&:artist)
   end
 
   def add_song(song)
